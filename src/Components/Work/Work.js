@@ -4,7 +4,7 @@ import './work.scss'
 export class Work extends Component {
     render(){
         return (
-            <div>
+            <div className='work'>
                 <h1>
                     work
                 </h1>
