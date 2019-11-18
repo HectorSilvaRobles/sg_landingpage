@@ -36,16 +36,15 @@
 }
 
 .service-option {
-    // border: solid green 2px;
     height: 95px;
 }
 
-.service-option:focus {
+.service-option:focus, .service-option:active {
     outline: none;
     color: #F58D26;
 }
 
-.service-option:focus > h1{
+.service-option:focus > h1, .service-option:active > h1{
     font-size: 28px;
 }
 .service-option > h1 {
@@ -66,6 +65,218 @@
 }
 
 .services-info {
-    background: red;
-    height: 50%;
+    height: 55%;
+    width: 100%;
+}
+
+.service-card {
+    height: 50vh;
+}
+
+.sc-real {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.service-image {
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;;
+}
+
+.service-image > img {
+    width: 100%;
+}
+
+.s-info {
+    height: 80%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-info > h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #575656;
+}
+
+.s-info > p {
+    font-size: 25px;
+    font-family: arial Arial, Helvetica, sans-serif;
+    color: #727272;
+    margin: 15px 0px 25px 0px;
+    width: 80%;
+    text-align: center;
+}
+
+.s-info > button {
+    background: #F58D26;
+    color: white;
+    border: none;
+    width: 80%;
+    height: 20%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 700px){
+    .service-option > h1 {
+        font-size: 18px;
+    }
+
+    .service-option:focus > h1 {
+        font-size: 22px;
+    }
+
+    .service-image {
+        width: 35%;
+    }
+
+    .sc-real {
+        height: 80%;
+    }
+
+    .s-info {
+        width: 45%;
+    }
+
+    .s-info >p {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px){
+
+    .services {
+        height: 80vh;
+    }
+    .services-title {
+        height: 20%;
+    }
+    .services-title > h1 {
+        font-size: 50px;
+    }
+
+    .services-title > h2 {
+        font-size: 20px;
+    }
+    .service-image {
+        width: 40%;
+    }
+
+    .s-info {
+        width: 55%;
+    }
+
+    .s-info > h1 {
+        font-size: 40px;
+    }
+
+    .s-info > p {
+        font-size: 22px;
+        margin: 10px 0
+    }
+
+    .s-info > button {
+        height: 25%;
+    }
+
+}
+
+@media screen and (max-width: 699px){
+    .services {
+        height: 130vh;
+    }
+
+    .services-title {
+        width: 95%;
+        height: 25%;
+    }
+    .services-title > h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .services-title > h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .service-card {
+        height: 75vh;
+    }
+
+    .sc-real {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .service-image, .s-info {
+        width: 95%;
+    }
+
+    .s-info > h1 {
+        font-size: 40px;
+        width: 95%;
+        text-align: center;
+    }
+    .s-info > p {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .s-info > button {
+        height: 25%;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .services-title > h1 {
+        font-size: 120px;
+    }
+
+    .services-title > h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .services-carousel {
+        height: 150px;
+    }
+
+    .service-option {
+        height: 149px;
+    }
+
+    .service-option > h1 {
+        font-size: 40px;
+    }
+
+    .service-option:focus > h1 {
+        font-size: 45px;
+    }
+
+    .service-image, .s-info {
+        width: 40%;
+    }
+
+    .s-info > h1 {
+        font-size: 90px;
+    }
+
+    .s-info > p {
+        font-size: 45px;
+    }
+
+    .s-info > button {
+        font-size: 50px;
+    }
 }
