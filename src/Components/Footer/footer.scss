@@ -1,4 +1,16 @@
 .footer {
     background: grey;
     height: 20vh;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: black;
+}
+
+.footer-logo > img {
+    height: 90%;
 }
