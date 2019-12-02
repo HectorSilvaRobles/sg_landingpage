@@ -3,6 +3,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 const app = express();
+const xoauth2 = require('xoauth2');
 
 app.use(express.json())
 
@@ -10,6 +11,7 @@ const {EMAIL, EMAIL_PASSWORD} = process.env
 
 // Nodemailer
 let nodemailerFunction = (input) => {
+    console.log('nodemailer input', input)
     const {name, email, phone} = input
 
     // Step 1
@@ -22,7 +24,7 @@ let nodemailerFunction = (input) => {
     });
 
     // Step 2 
-    let MailOptions = {
+    let mailOptions = {
         from: email,
         to: EMAIL,
         subject: 'New estimate request made from website',
@@ -33,15 +35,17 @@ let nodemailerFunction = (input) => {
     }
     
     // Step 3
-    transporter.sendMail(MailOptions, (err, data) => {
+    transporter.sendMail(mailOptions, (err, data) => {
         if(err){
-            console.log('failed to send')
+            console.log('failed to send', err)
         } else {
             console.log('email sent!')
         }
     })
 }
 
+
+// Formik Endpoint
 app.post('/api/contact-form', (req, res, next) => {
     console.log('from the api /contact-form', req.body)
     nodemailerFunction(req.body)
