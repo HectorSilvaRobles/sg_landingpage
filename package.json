@@ -2,6 +2,7 @@
   "name": "silva-garcia",
   "version": "0.1.0",
   "private": true,
+  "main": "server/index.js",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
@@ -17,6 +18,7 @@
     "react-scripts": "3.2.0",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
+    "xoauth2": "^1.2.0",
     "yup": "^0.27.0"
   },
   "scripts": {
