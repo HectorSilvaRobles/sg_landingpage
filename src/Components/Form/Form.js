@@ -19,7 +19,7 @@ const Formik = withFormik({
             .required('*Name is required'),
         phone: Yup.string()
             .min(7, '*Please enter your phone')
-            .required('*Phoneis required'),
+            .required('*Phone is required'),
         email: Yup.string()
             .email('*Must be a valid email')
             .max(150, '*Must be shorter than 150 characters')
@@ -64,6 +64,7 @@ function LpForm(formikProps){
                                 value={values.name}
                                 onBlur={handleBlur}
                                 className='fs1-name'
+                                size='55'
                              />
                              {touched.name && errors.name && (
                                  <p>{errors.name}</p>

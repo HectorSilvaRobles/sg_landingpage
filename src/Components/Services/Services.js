@@ -37,7 +37,7 @@ export class Services extends Component {
             centerMode: true,
             infinite: true,
             centerPadding: "50px",
-            slidesToShow: 4,
+            slidesToShow: 3,
             speed: 500,
             swipeToSlide: true,
             focusOnSelect: true,

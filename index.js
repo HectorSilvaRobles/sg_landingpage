@@ -3,6 +3,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 const app = express();
+const path = require('path')
 const xoauth2 = require('xoauth2');
 
 app.use(express.json())
@@ -50,5 +51,12 @@ app.post('/api/contact-form', (req, res, next) => {
     console.log('from the api /contact-form', req.body)
     nodemailerFunction(req.body)
 })
+
+
+app.use(express.static('public'));
+// Index route
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build/index.html'));
+});
 
 app.listen(4000, () => console.log('listening on port 4000'))
