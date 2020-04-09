@@ -53,10 +53,10 @@ app.post('/api/contact-form', (req, res, next) => {
 })
 
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'build')));
 // Index route
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build/index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.listen(4000, () => console.log('listening on port 4000'))
