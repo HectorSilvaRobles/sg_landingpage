@@ -53,7 +53,7 @@ app.post('/api/contact-form', (req, res, next) => {
 })
 
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static('build'));
 // Index route
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
