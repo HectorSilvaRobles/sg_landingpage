@@ -57,9 +57,9 @@ if(process.env.NODE_ENV === 'production'){
     app.use(express.static('build'));
     // Index route
     app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname + 'build/index.html'));
     });
 }
 
 
-app.listen(process.env.PORT ? process.env.PORT : 4000, () => console.log('listening on port 4000'))
+app.listen(10000, () => console.log('listening on port 10000'))
