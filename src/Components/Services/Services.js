@@ -13,7 +13,6 @@ import lawn from '../../Media/lawnmaintance.jpg'
 import pavers from '../../Media/pavers.jpg'
 import concrete from '../../Media/ concrete.jpg'
 import fence from '../../Media/fence.jpg'
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
