@@ -62,4 +62,4 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
-app.listen(10000, () => console.log('listening on port 10000'))
+app.listen(process.env.PORT ? process.env.PORT : 10000, () => console.log('listening on port 10000'))
