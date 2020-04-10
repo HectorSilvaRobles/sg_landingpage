@@ -27,13 +27,14 @@
     justify-content: center;
 }
 
-.hero-info > h1 {
+.hero-title > h1 {
     color: white;
     font-size: calc(60px + (90 - 60) * ((100vw - 1100px) / (1800 - 1100)));
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: capitalize;
 }
+
 
 .hero-buttons {
     width: 85%;
@@ -43,14 +44,23 @@
     align-items: center;
 }
 
-.hero-buttons > button {
+.hero-buttons > a >button {
+    cursor: pointer;
     font-size: calc(22px + (30 - 22) * ((100vw - 1100px) / (1800 - 1100)))
+}
+.hero-buttons > a >button:focus {
+    outline: 0;
+}
+
+.active {
+    width: 35%;
+    height: 50%;
 }
 
 .hero-learn {
-    width: 35%;
-    height: 50%;
-    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    // border-radius: 100px;
     background: none;
     color: white;
     font-size: 30px;
@@ -58,15 +68,20 @@
     border: solid white 5px;
 }
 
-.hero-cta {
+.active2 {
     height: 50%;
-    border-radius: 100px;
+    width: 55%;
+}
+
+.hero-cta {
+    height: 100%;
+    // border-radius: 100px;
     color: white;
     font-size: 30px;
     font-weight: bold;
     border: none;
     background: #F58D26;
-    width: 55%;
+    width: 100%;
 }
 
 .hero-blank {
@@ -88,29 +103,53 @@
         flex-direction: column;
     }
 
+    .hero-title {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hero-info {
-        height: 80%;
+        height: 100%;
         width: 100%;
         align-items: center;
         text-align: center;
     }
 
-    .hero-info > h1 {
+    .active, .active2 {
+        width: 100%;
+        // height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-title > h1 {
         width: 95%;
-        font-size: 40px;
+        font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (700 - 300)));
+
+    }
+
+    .hero-cta, .hero-learn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .hero-buttons {
-        margin-top: 30px;
         flex-direction: column;
-        height: 35%;
+        height: 30%;
         width: 95%;
         // background: white;
     }
 
-    .hero-buttons > button {
+    .hero-buttons > a > button {
         width: 80%;
-        height: 35%;
+        height: 70%;
+        font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (700 - 300)));
+        padding: 0;
     }
 
     .hero-blank {

@@ -14,6 +14,9 @@ import pavers from '../../Media/pavers.jpg'
 import concrete from '../../Media/ concrete.jpg'
 import fence from '../../Media/fence.jpg'
 
+import { Link, animateScroll as scroll } from "react-scroll";
+
+
 
 export class Services extends Component {
     constructor(props){
@@ -107,7 +110,16 @@ export class Services extends Component {
                                 <div className='s-info'>
                                     <h1>Exterior Painting</h1>
                                     <p>We provide professional exterior painting services on a wide variety of surfaces to enhance your home’s look</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -119,7 +131,16 @@ export class Services extends Component {
                                 <div className='s-info'>
                                     <h1>Interior Painting</h1>
                                     <p>Our interior painting services help provide a seamless, efficient and high quality finish for the inside of your home.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -131,7 +152,16 @@ export class Services extends Component {
                                 <div className='s-info'>
                                     <h1>Drywall Installation</h1>
                                     <p>We are able to repair, install, sand and patch-up drywall to create a flawless surface to paint on</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -141,9 +171,18 @@ export class Services extends Component {
                                     <img src={kitchen} alt='kitchen and cabinent remodeling' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Kitchen & Cabinets</h1>
+                                    <p>We will put together your dream kitchen</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +193,17 @@ export class Services extends Component {
                                 </div>
                                 <div className='s-info'>
                                     <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <p>We help install all types of floors. Ranging from carpert to tile and everything.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                        
@@ -165,9 +213,18 @@ export class Services extends Component {
                                     <img src={bathroom} alt='bathroom remodeling' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Bathroom Remodel</h1>
+                                    <p>We will help remodel and provide a brand new looking bathroom of your choosing.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -177,9 +234,18 @@ export class Services extends Component {
                                     <img src={lawn} alt='Lawn maintenance and lawn care' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Lawn Maintenance</h1>
+                                    <p>We will help maintain your lawn and much more!</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -189,9 +255,18 @@ export class Services extends Component {
                                     <img src={pavers} alt='pavers on a backyard' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Walkways & Pavers</h1>
+                                    <p>We will place down beautiful pavers and walkways to complement your home.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -201,9 +276,18 @@ export class Services extends Component {
                                     <img src={concrete} alt='concrete flatwork for homes' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Concrete Flatwork</h1>
+                                    <p>We do all kinds of concrete pours, including sidewalks, driveways and curbs.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      
@@ -213,9 +297,18 @@ export class Services extends Component {
                                     <img src={fence} alt='fencing and wall installations' />
                                 </div>
                                 <div className='s-info'>
-                                    <h1>Floor Installation</h1>
-                                    <p>describing the services and the various ways to use it</p>
+                                    <h1>Wall & Fencing</h1>
+                                    <p>Having a barrier on your lawn is a way to keep your home secure and looking good.</p>
+                                    <Link
+                                        className='s-info-button'
+                                        to='contact'
+                                        spy={true}
+                                        smooth={true}
+                                        duration={700}
+                                        offset={-70}
+                                    >
                                     <button>Schedule Estimate</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>                                      

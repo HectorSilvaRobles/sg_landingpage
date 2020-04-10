@@ -11,12 +11,12 @@ import Footer from './Components/Footer/Footer.js'
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header  />
       <Hero />
-      <Intro />
+      <Intro id='intro' />
       <Services />
       <Testimonials />
-      <Form />
+      <Form  />
       <Footer />
     </div>
   );

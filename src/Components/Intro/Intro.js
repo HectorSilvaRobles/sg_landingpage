@@ -7,7 +7,7 @@ import {FaSuitcase} from 'react-icons/fa'
 export class Intro extends Component {
     render(){
         return (
-            <div className='intro'>
+            <div className='intro' id='intro'>
                 <div className='intro-title'>
                     <h1>Who we work with</h1>
                 </div>
@@ -20,12 +20,12 @@ export class Intro extends Component {
                     <div className='card-2'>
                         <MdBusiness size='80' className='icon' />
                         <h1>Commercial</h1>
-                        <p>We work with homeowers to help provide a living space they can call home.</p>
+                        <p>No matter the size of the entreprise we provide top notch services to improve your workplace.</p>
                     </div>
                     <div className='card-3'>
                         <FaSuitcase size='80' className='icon' />
                         <h1>Investors</h1>
-                        <p>We work with homeowers to help provide a living space they can call home.</p>
+                        <p>We work closely with investors who are looking for quality home renovations & improvements</p>
                     </div>
                 </div>
             </div>

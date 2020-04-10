@@ -46,7 +46,8 @@ function LpForm(formikProps){
 
     console.log(values)
         return (
-            <div className='form'>
+            <div className='form'
+            id='contact'>
                 <div className='form-title'>
                     <h1>Got A Home Project In Mind?</h1>
                     <h2>Let us help complete that project for you. Fill out the form to schedule an estimate.</h2>
