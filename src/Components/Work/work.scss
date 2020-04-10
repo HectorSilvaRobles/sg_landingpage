@@ -1,0 +1,139 @@
+.work {
+    background: rgb(20, 20, 20);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-title {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.work-title > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(50px + (70 - 50) * ((100vw - 700px) / (1800 - 700)));
+    font-weight: bold;
+    color: white;
+}
+
+.work-title > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: calc(20px + (30 - 20) * ((100vw - 700px) / (1800 - 700)));
+    color: white;
+}
+
+.work-content {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.our-work {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wb-title {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: calc(20px + (30 - 20) * ((100vw - 700px) / (1800 - 700)));
+    height: 10%;
+    width: 80%;
+    color: white;
+}
+
+.ba-content {
+    height: 90%;
+    width: 90%;
+}
+
+.slider {
+    background: pink;
+    height: 100%;
+    width: 100%;
+}
+
+.before-content {
+    background: yellow;
+    height: 40vh;
+    background-image: url('../../Media/workers.jpg');
+    background-size: cover;
+}
+
+.before-content > img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px){
+    .work {
+        height: 80vh;
+    }
+    .work-content {
+        width: 90%;
+        // height: 50%;
+    }
+}
+
+@media screen and (max-width: 699px){
+    .wb-title {
+        height: 10%;
+        align-items: flex-end;
+    }
+
+    .wb-title > h1 {
+        font-size: 20px;
+        
+    }
+    .work {
+        height: 150vh
+    }
+    .work-content, .work-title {
+        width: 100%;
+    }
+
+    .work-title {
+        height: 20%;
+        justify-content: center;
+    }
+
+    .work-content {
+         flex-direction: column;
+         height: 80%;
+    }
+    .work-title > h1 {
+        font-size: calc(50px + (60 - 50) * ((100vw - 350px) / (699 - 350)));
+        width: 90%;
+        text-align: center;
+    }
+
+    .work-title > h2 {
+        font-size: calc(20px + (30 - 20) * ((100vw - 350px) / (699 - 350)));
+        width: 90%;
+    }
+
+    .our-work {
+        width: 90%;
+        height: 60%;
+        justify-content: space-between;
+    }
+
+    .slider {
+        height: 90%;
+    }
+}
