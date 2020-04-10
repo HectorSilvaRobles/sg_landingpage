@@ -56,10 +56,12 @@ app.post('/api/contact-form', (req, res, next) => {
 if(process.env.NODE_ENV === 'production'){
     app.use(express.static('build'));
     // Index route
-    // app.get('*', (req, res) => {
-    // res.sendFile(path.join(__dirname + 'build/index.html'));
-    // });
+    app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + 'build/index.html'));
+    });
 }
 
+var port = process.env.PORT + 3 || 4000
 
-app.listen(process.env.PORT ? process.env.PORT + 30 : 10000, () => console.log('listening on port 10000'))
+
+app.listen(port, () => console.log('listening on port ' + port))
