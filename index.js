@@ -61,7 +61,7 @@ if(process.env.NODE_ENV === 'production'){
     });
 }
 
-var port = process.env.PORT + 3 || 4000
+var port = process.env.PORT || 4000
 
 
 
